@@ -1,5 +1,5 @@
 # Parasite-Invoke
-Hide your P/Invoke signatures through other people's assemblies!
+Hide your P/Invoke signatures through other people's signed assemblies!
 
 ## Usage
 ![изображение](https://github.com/MzHmO/Parasite-Invoke/assets/92790655/7932c49f-232e-4184-8059-d107f3470f2e)
@@ -36,7 +36,7 @@ Suppose you want to hide the use of the `VirtualAlloc()` function. You run my to
 ```
 ![изображение](https://github.com/MzHmO/Parasite-Invoke/assets/92790655/09264552-c58b-4fee-a4d6-ee6ecb7f8b46)
 
-You should just copy the signature into your code, then add arguments to call the method and quietly PARASITE on the PInvoke signature from someone else's .NET assembly.
+You should just copy the signature into your code, then add arguments to call the method and quietly PARASITE on the PInvoke signature from someone else's (often signed) .NET assembly.
 ```cs
 using System;
 using System.Reflection;
