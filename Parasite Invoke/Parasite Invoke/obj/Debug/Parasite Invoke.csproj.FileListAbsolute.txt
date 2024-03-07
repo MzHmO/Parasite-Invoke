@@ -1,0 +1,18 @@
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\bin\Debug\Parasite Invoke.exe.config
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\bin\Debug\Parasite Invoke.exe
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\bin\Debug\Parasite Invoke.pdb
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\obj\Debug\Parasite Invoke.csproj.AssemblyReference.cache
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\obj\Debug\Parasite Invoke.csproj.CoreCompileInputs.cache
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\obj\Debug\Parasite Invoke.exe
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\obj\Debug\Parasite Invoke.pdb
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\bin\Debug\Mono.Cecil.dll
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\bin\Debug\Mono.Cecil.Mdb.dll
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\bin\Debug\Mono.Cecil.Pdb.dll
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\bin\Debug\Mono.Cecil.Rocks.dll
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\bin\Debug\Mono.Cecil.pdb
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\bin\Debug\Mono.Cecil.Mdb.pdb
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\bin\Debug\Mono.Cecil.Pdb.pdb
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\bin\Debug\Mono.Cecil.Rocks.pdb
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\obj\Debug\Parasite Invoke.csproj.CopyComplete
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\bin\Debug\Microsoft.Extensions.CommandLineUtils.dll
+A:\SSD\ProjectsVS\Parasite Invoke\Parasite Invoke\bin\Debug\Microsoft.Extensions.CommandLineUtils.xml
