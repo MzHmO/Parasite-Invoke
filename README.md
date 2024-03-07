@@ -26,7 +26,9 @@ Let's go to an example
 
 ## Example (u should go here)
 Suppose you want to hide the use of the `VirtualAlloc()` function. You run my tool and receive the following output:
-
+```shell
+.\ParasiteInvoke.exe --path C:\ -r --method VirtualAlloc
+```
 ![изображение](https://github.com/MzHmO/Parasite-Invoke/assets/92790655/09264552-c58b-4fee-a4d6-ee6ecb7f8b46)
 
 You should just copy the signature into your code, then add arguments to call the method and quietly PARASITE on the PInvoke signature from someone else's .NET assembly.
