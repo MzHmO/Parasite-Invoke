@@ -15,11 +15,16 @@ Hide your P/Invoke signatures through other people's assemblies!
 
 The tool accepts one mandatory parameter, it is path. If you simply specify a `--path` (For ex, `--path C:\`), the tool will find all .NET assemblies on that path and output the P/Invoke signatures used in them, which you can use in your code to hide the use of P/Invoke (see `Example` below). To perform a recursive search for assemblies, add the `-r` parameter.
 
+```shell
+.\ParasiteInvoke.exe --path C:\ -r
+```
 ![изображение](https://github.com/MzHmO/Parasite-Invoke/assets/92790655/74bc4b69-cc38-493a-8ac2-1132f597e9b1)
 
 But most likely you will be interested in hiding a particular PInvoke method. That's why I created the `--method` argument. You can use it to find .NET builds that have this method signature.
 
-
+```shell
+.\ParasiteInvoke.exe --path C:\ -r --method VirtualAlloc
+```
 ![изображение](https://github.com/MzHmO/Parasite-Invoke/assets/92790655/0a44ddda-790e-4686-b39b-598cf101201f)
 
 Let's go to an example
