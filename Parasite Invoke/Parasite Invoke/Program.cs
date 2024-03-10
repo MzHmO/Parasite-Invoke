@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -38,7 +38,9 @@ namespace ParasiteInvoke
         {
             ProcessPInvokeMethods(filePath, (method, piInfo) =>
             {
-                if (piInfo == null) return;
+                if (piInfo == null)
+                    return;
+
                 if (piInfo.EntryPoint == methodName)
                 {
                     Console.WriteLine("-------------");
@@ -60,7 +62,7 @@ namespace ParasiteInvoke
                 Console.WriteLine($"\tAssembly asm = Assembly.LoadFrom(@\"{method.Module.FileName}\");");
                 Console.WriteLine($"\tType t = asm.GetType(\"{typeName}\", true);");
                 Console.WriteLine($"\tvar methodInfo = t.GetMethod(\"{piInfo.EntryPoint}\", {DetermineBindingFlags(method)} );");
-                Console.WriteLine($"\t{method.ReturnType.FullName} result = ({method.ReturnType.FullName}) methodInfo.Invoke(null, new object[] {{ {ParseArgs(method)} }});"); // first argument is null because PInvoke winapi methods always are static methods
+                Console.WriteLine($"\t{method.ReturnType.FullName} result = ({method.ReturnType.FullName}) methodInfo.Invoke(null, new object[] {{ {ParseArgs(method)} }});"); // first argument is null because PInvoke winapi methods are always static methods
                 Console.WriteLine($"\t===END SIGNATURE===");
             }
         }
@@ -94,25 +96,25 @@ namespace ParasiteInvoke
 
 
             Dictionary<string, string> typeNames = new Dictionary<string, string>
-    {
-        { "System.Byte", "byte" },
-        { "System.SByte", "sbyte" },
-        { "System.Int32", "int" },
-        { "System.UInt32", "uint" },
-        { "System.Int16", "short" },
-        { "System.UInt16", "ushort" },
-        { "System.Int64", "long" },
-        { "System.UInt64", "ulong" },
-        { "System.Single", "float" },
-        { "System.Double", "double" },
-        { "System.Boolean", "bool" },
-        { "System.Char", "char" },
-        { "System.Object", "object" },
-        { "System.String", "string" },
-        { "System.Decimal", "decimal" },
-        { "System.Void", "void" }
-        // U can extens the dict
-    };
+                {
+                { "System.Byte", "byte" },
+                { "System.SByte", "sbyte" },
+                { "System.Int32", "int" },
+                { "System.UInt32", "uint" },
+                { "System.Int16", "short" },
+                { "System.UInt16", "ushort" },
+                { "System.Int64", "long" },
+                { "System.UInt64", "ulong" },
+                { "System.Single", "float" },
+                { "System.Double", "double" },
+                { "System.Boolean", "bool" },
+                { "System.Char", "char" },
+                { "System.Object", "object" },
+                { "System.String", "string" },
+                { "System.Decimal", "decimal" },
+                { "System.Void", "void" }
+                // U can extend the dict
+            };
 
             if (typeNames.TryGetValue(fullName, out string friendlyName))
             {
